@@ -28,15 +28,31 @@ submit.onclick = (e) => {
             res.text()).then(data => {
             let pass = data.split("\r\n");
             // console.log(pass);
-            pass.forEach(check);    
-            function check(value) {
-                let match = value.split(":");
-                console.log(match[0]);
-                if(match[0] == prefix.toUpperCase()) {
-                    console.log("Password Found\n");
-                }else{
-                    console.log("Password Not Found\n");
+            // pass.forEach(check);    
+            // function check(value) {
+            //     let match = value.split(":");
+            //     // console.log(match[0]);
+            //     if(match[0] == prefix.toUpperCase()) {
+            //         console.log("Password Found\n" + match[1] + " times");
+            //     }else{
+            //         console.log("Password Not Found\n");
+            //     }
+            // }
+            
+            let found = false;
+            for(let i = 0; i < pass.length; i++) {
+                let hash = pass[i];
+                let h = hash.split(":");
+
+                if(h[0] == prefix.toUpperCase()) {
+                    console.log("Password Found\n" + h[1] + " times");
+                    found = true;
+                    break;
                 }
+            }
+
+            if(!found){
+                console.log("Password Not Found\n");
             }
         })
 
