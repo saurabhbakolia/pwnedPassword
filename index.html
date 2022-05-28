@@ -62,11 +62,14 @@
                 <a href="#">Why 1Password?</a>
             </div>
         </div>
-        <div class="hide">
-            <h2>Oh no - pwned!</h2>
-            <h3>This password has been seen 264,138 times before</h3>
-            <p>This password has previously appeared in a data breach and should never be used. If you've ever used it anywhere before, change it!</p>
         </div>
+    </div>
+
+    <div class="hide">
+        <div class="container">
+            <h2>Oh no - pwned!</h2>
+            <h3 id="output"></h3>
+            <p>This password has previously appeared in a data breach and should never be used. If you've ever used it anywhere before, change it!</p>
         </div>
     </div>
 
@@ -148,8 +151,6 @@
             </div>
         </div>
     </footer>   
-
-    <p id="output"></p>
 
     <script src="./script.js"></script>
 </body>

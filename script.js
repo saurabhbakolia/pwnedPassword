@@ -47,7 +47,7 @@ submit.onclick = (e) => {
 
                 if(h[0] == prefix.toUpperCase()) {
                     console.log("Password Found\n" + h[1] + " times");
-                    output.innerHTML = "Your Password has been found " + h[1] + " times";
+                    output.innerHTML = "This password has been seen " +  h[1]  + " times.";
                     found = true;
                     break;
                 }
