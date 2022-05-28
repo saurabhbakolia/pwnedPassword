@@ -14,7 +14,7 @@ submit.onclick = (e) => {
         const result = Array.from(new Uint8Array(digest)).map(x => x.toString(16).padStart(2, '0')).join('');
         console.log(typeof result);
 
-        const suffix = result.slice(0, 5);
+        const suffix = result.slice(0, 5).toUpperCase();
         const prefix = result.slice(5);
         console.log(suffix);
         console.log(prefix);
@@ -27,7 +27,17 @@ submit.onclick = (e) => {
         fetchRes.then(res =>
             res.text()).then(data => {
             let pass = data.split("\r\n");
-            console.log(pass);
+            // console.log(pass);
+            pass.forEach(check);    
+            function check(value) {
+                let match = value.split(":");
+                console.log(match[0]);
+                if(match[0] == prefix.toUpperCase()) {
+                    console.log("Password Found\n");
+                }else{
+                    console.log("Password Not Found\n");
+                }
+            }
         })
 
     };
