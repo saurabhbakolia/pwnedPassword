@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, Helvetica, Arial, sans-serif
+}
+
+header {
+    background-color: #000;
+}
+
+.container {
+    margin-inline: 280px;
+    padding-block: 20px;
+    width: 960px;
+}
+
+.navbar {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo button{
+    padding-inline:8px;
+    padding-block:3px;
+    height:35px;
+    width:42px; 
+    display:inline-block;
+    border-radius: 10px;
+    border:2px solid #ccc;
+    cursor: pointer;
+    background-color:transparent;
+    color:#ccc;
+    font-size:20px;
+}
+
+.nav_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_items li {
+    list-style: none;
+
+}
+
+.nav_items li a {
+    color: #ccc;
+    height: 50px;
+    padding: 15px 10px 15px 10px;
+    text-decoration: none;
+    font-size:18px;
+
+}
+
+
+
+/* ######################################### article_1 ################################# */
+.article_1{
+    color:#fff;
+    background-color: #296687;
+}
+
+.main{
+    height:220px;
+    padding-block:50px;
+}
+
+/* ########################################### form ################################# */
+
+.form{
+    background-color:#358CA8;
+    text-align: center;
+}
+
+.form input{
+    height:60px;
+    width:800px;
+    padding-block:6px;
+    border-radius:10px;
+    padding-inline:12px;
+    font-size:18px;
+}
+
+.form  button{
+    height:60px;
+    width:128px;
+    padding-block:10px;
+    border-radius: 10px;
+    background-color:#3284A1;
+    font-size:18px;
+    color:#fff;
+}
+
+
+/* #####################################  container ads ##########################*/
+.ads{
+    background-color:#2C778D;
+    display:flex;
+    flex-direction:column;
+}
+
+.box_text{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+}
+
+.box_text h3{
+    margin-inline:10px;
+}
+.box_text button{
+    color:#fff;
+    background-color:#1A8CFF;
+    padding-block:6px;
+    padding-inline:8px;
+    border-radius: 5px;;
+}
+
+.box_link {
+    text-align:center;
+
+}
+
+.box_link a{
+    color:#fff;
+}
+
+/* ###################################################### hide content style ############################# */
+.hide{
+    display:none;
+}
+
+.hide{
+    background-color: #973535;
+    
+}
+
+/* ######################################### box-content ############################################ */
+.box_content{
+    background-color:#000;
+    color:#d3d3d3;
+    font-size:25px;
+}
+
+
+.box{
+    margin-block:20px 10px;
+    font-weight: lighter;
+}
+
+.box img{
+    height:100px;
+    width:400px;
+    display:block;
+    margin:0 auto;
+}
+
+/* ############################################# footer ######################################### */
+footer{
+    background-color:#000;
+    padding-block:10px 10px;
+
+}
+
+.footer_link{
+    text-align:center;
+    text-decoration:none;
+    color:#323232;
+    font-size:24px;
+}
+.social_icon{
+    text-align:center;
+    margin-block:10px 0px;
+}
+
+.social_icon i{
+    color:#323232;
+    padding-inline:10px;
+}

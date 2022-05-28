@@ -1,21 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
     <title>pwnedPassword</title>
 </head>
+
 <body>
-    
-    <form action="">
-        <label for="password">Input Password</label>
-        <input type="password" name="input" id="password" placeholder="Enter your password">
-        <button type="submit" id="submit">Submit</button>
-    </form>
+    <header>
+        <nav class="navbar container">
+            <div class="logo"><button>';--</button></div>
+            <div>
+                <ul class="nav_items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Notify me</a></li>
+                    <li><a href="#">Domain Search</a></li>
+                    <li><a href="#">Who's been pwned</a></li>
+                    <li><a href="#">Password</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Donate</a><span></span></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="article_1">
+        <div class="container main">
+            <h1>Pwned Passwords</h1>
+            <p>
+                Pwned Passwords are hundreds of millions of real world passwords
+                previously exposed in data breaches. This exposure makes them
+                unsuitable for ongoing use as they're at much greater risk of being
+                used to take over other accounts. They're searchable online below as
+                well as being downloadable for use in other online systems. Read more
+                about how HIBP protects the privacy of searched passwords.
+            </p>
+        </div>
+    </section>
+    <div class="form">
+        <form class="container">
+            <input type="password" name="input" id="password" placeholder="Enter your password" />
+            <button type="submit" id="submit">pwned?</button>
+        </form>
+    </div>
+
+    <div class="ads">
+        <div class="container content show">
+            <div class="box_text">
+                <img src="https://haveibeenpwned.com/Content/Images/PasswordManager/1PasswordLogo.svg" alt="" />
+                <h3>Generate secure, unique passwords for every account</h3>
+                <button>Learn more at 1Password.com</button>
+            </div>
+            <div class="box_link">
+                <a href="#">Why 1Password?</a>
+            </div>
+        </div>
+        <div class="hide">
+            <h2>Oh no - pwned!</h2>
+            <h3>This password has been seen 264,138 times before</h3>
+            <p>This password has previously appeared in a data breach and should never be used. If you've ever used it anywhere before, change it!</p>
+        </div>
+        </div>
+    </div>
+
+    <article class="box_content">
+        <div class="container">
+            <div class="box">
+                <h4>Password reuse and credential stuffing</h4>
+                <p>
+                    Password reuse is normal. It's extremely risky, but it's so common
+                    because it's easy and people aren't aware of the potential impact.
+                    Attacks such as credential stuffing take advantage of reused
+                    credentials by automating login attempts against systems using known
+                    emails and password pairs.
+                </p>
+            </div>
+
+            <div class="box">
+                <h4>
+                    NIST's guidance: check passwords against those obtained from previous
+                    data breaches
+                </h4>
+                <p>
+                    The Pwned Passwords service was created in August 2017 after NIST
+                    released guidance specifically recommending that user-provided
+                    passwords be checked against existing data breaches. The rationale for
+                    this advice and suggestions for how applications may leverage this
+                    data is described in detail in the blog post titled Introducing 306
+                    Million Freely Downloadable Pwned Passwords. In February 2018, version
+                    2 of the service was released with more than half a billion passwords,
+                    each now also with a count of how many times they'd been seen exposed.
+                    A version 3 release in July 2018 contributed a further 16M passwords,
+                    version 4 came in January 2019 along with the "Collection #1" data
+                    breach to bring the total to over 551M. Version 5 landed in July 2019
+                    with a total count of 555M records, version 6 arrived June 2020 with
+                    almost 573M then version 7 arrived November 2020 bringing the total
+                    passwords to over 613M. The final monolithic release was version 8 in
+                    December 2021 which marked the beginning of the ingestion pipeline
+                    utilised by law enforcement agencies such as the FBI.
+                </p>
+            </div>
+            <div class="box">
+                <h4>Downloading the Pwned Passwords list</h4>
+                <p>
+                    The entire set of passwords is downloadable for free below with each
+                    password being represented as either a SHA-1 or an NTLM hash to
+                    protect the original value (some passwords contain personally
+                    identifiable information) followed by a count of how many times that
+                    password had been seen in the source data breaches. The list may be
+                    integrated into other systems and used to verify whether a password
+                    has previously appeared in a data breach after which a system may warn
+                    the user or even block the password outright. For suggestions on
+                    integration practices, read the Pwned Passwords launch blog post for
+                    more information. At present, the downloadable files are not updated
+                    with new entries from the ingestion pipeline, use the k-anonymity API
+                    if you'd like access to these. Please download the data via the
+                    torrent link if possible! If you can't access torrents (for example,
+                    they're blocked by a corporate firewall), use the "Cloudflare" link
+                    and they'll kindly cover the bandwidth cost. The bandwidth costs of
+                    distributing this content from a hosted service is significant when
+                    downloaded extensively. Cloudflare kindly offered to support this
+                    initiative by aggressively caching the file at their edge nodes over
+                    and beyond what would normally be available. Their support in making
+                    this data available to help organisations protect their customers is
+                    most appreciated.
+                </p>
+
+                <img src="https://haveibeenpwned.com/Content/Images/CloudFlareLogo.svg" alt="image" />
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <div class="footer_link"><a class="footer_link" href="#">A troyhunt.com project</a></div>
+            <div class="social_icon">
+                <i class="fa-brands fa-facebook-square fa-3x"></i>
+                <i class="fa-brands fa-twitter-square fa-3x"></i>
+                <i class="fa-solid fa-envelope fa-3x"></i>
+            </div>
+        </div>
+    </footer>   
 
     <p id="output"></p>
 
     <script src="./script.js"></script>
 </body>
+
 </html>
