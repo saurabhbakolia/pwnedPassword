@@ -1,5 +1,6 @@
 const submit = document.getElementById("submit");
 let input = document.getElementById("password");
+const output = document.getElementById("output");
 
 submit.onclick = (e) => {
     e.preventDefault();
@@ -46,6 +47,7 @@ submit.onclick = (e) => {
 
                 if(h[0] == prefix.toUpperCase()) {
                     console.log("Password Found\n" + h[1] + " times");
+                    output.innerHTML = "Your Password has been found " + h[1] + " times";
                     found = true;
                     break;
                 }
@@ -53,6 +55,8 @@ submit.onclick = (e) => {
 
             if(!found){
                 console.log("Password Not Found\n");
+                output.innerHTML = "Your Password NOT Found";
+
             }
         })
 
