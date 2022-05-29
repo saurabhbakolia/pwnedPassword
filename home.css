@@ -5,9 +5,70 @@
     font-family: Calibri, Helvetica, Arial, sans-serif
 }
 
+/* ############################################# MODAL STYLE  #############################*/
+.modal {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    position:absolute;  
+    top: 8px;;
+    transform: translate(-50%);
+    left:50%;
+    border: 2px solid black;
+    border-radius:10px;
+    z-index: 1090;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0,);
+    /* display:none; */
+}
+
+.modal_title {
+    background-color: #132B36;
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-inline:20px;
+}
+.modal_title span i{
+    color:white;
+}
+
+.modal_title h2 {
+    color: #d3d3d3;
+}
+
+.modal_content {
+    background-color: black;
+    color: #fff;
+    padding:8px 10px 8px 10px;
+}
+
+#closeIcon{
+    padding:4px 6px 4px 6px;
+}
+
+.modal_logo {
+    float: left;
+}
+
+.modal_logo img {
+    width: 115px;
+    height: 100px;
+    margin: 10px;
+}
+
+.modal_text {
+    font-size: 16.8px;
+}
+
+
+
+
 header {
     background-color: #000;
     opacity: 0.9;
+    position: relative;
 }
 
 .container {
@@ -84,16 +145,16 @@ header {
     font-size: 72px;
     font-weight: 500;
     margin-block-end: 10px;
-    padding:8px 20px 8px 20px;
-    border:4px solid #d3d3d3;
-    border-radius:20px;
-    display:inline-block;
+    padding: 8px 20px 8px 20px;
+    border: 4px solid #d3d3d3;
+    border-radius: 20px;
+    display: inline-block;
     background-color: #d3d3d342;
 }
 
 .article_1 p {
     line-height: 24px;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .main {
@@ -115,8 +176,8 @@ header {
     border-radius: 10px;
     padding-inline: 12px;
     font-size: 20px;
-    outline:none;
-    border:none;
+    outline: none;
+    border: none;
 }
 
 .form button {
@@ -160,7 +221,7 @@ header {
     padding-block: 6px;
     padding-inline: 8px;
     border-radius: 5px;
-    border:none;
+    border: none;
 }
 
 .box_link {
@@ -172,18 +233,18 @@ header {
     color: #fff;
 }
 
-.ads_box{
+.ads_box {
     width: 290px;
-    text-align:left;
+    text-align: left;
 }
 
 /* ######################################### NO REAL ########################## */
-.no_real{
+.no_real {
     display: none;
-    background-color:#DFB300;
+    background-color: #DFB300;
     color: #fff;
     text-align: center;
-    font-size:24px;
+    font-size: 24px;
 }
 
 /* ###################################################### SAFE STYLE  ############################# */
@@ -194,36 +255,37 @@ header {
 }
 
 .safe {
-    background: rgb(7,45,7);
-    background: linear-gradient(90deg, rgba(7,45,7,0.9699230033810399) 2%, rgba(42,118,46,1) 43%, rgba(42,118,46,1) 100%);
+    background: rgb(7, 45, 7);
+    background: linear-gradient(90deg, rgba(7, 45, 7, 0.9699230033810399) 2%, rgba(42, 118, 46, 1) 43%, rgba(42, 118, 46, 1) 100%);
     width: 100%;
     text-align: center;
 }
-.safe h2{
-    font-size:28px;
+
+.safe h2 {
+    font-size: 28px;
 }
 
-.safe h4{
+.safe h4 {
     margin-block: 10px;
-    font-size:22px;
-    margin-inline-start:10px;
+    font-size: 22px;
+    margin-inline-start: 10px;
 }
 
-.safe_container{
+.safe_container {
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.safe_container button{
+.safe_container button {
     color: #fff;
     background-color: #1A8CFF;
     padding-block: 6px;
     padding-inline: 8px;
     border-radius: 5px;
-    height:32px;
+    height: 32px;
     outline: none;
-    border:none;
+    border: none;
 }
 
 /* ######################################### DANGER STYLE ##################################### */
@@ -240,31 +302,32 @@ header {
     width: 100%;
     text-align: center;
 }
-.danger h2{
-    font-size:28px;
+
+.danger h2 {
+    font-size: 28px;
 }
 
-.danger h4{
+.danger h4 {
     margin-block: 10px;
-    font-size:22px;
-    margin-inline-start:10px;
+    font-size: 22px;
+    margin-inline-start: 10px;
 }
 
-.danger_container{
+.danger_container {
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.danger_container button{
+.danger_container button {
     color: #fff;
     background-color: #1A8CFF;
     padding-block: 6px;
     padding-inline: 8px;
     border-radius: 5px;
-    height:32px;
+    height: 32px;
     outline: none;
-    border:none;
+    border: none;
 }
 
 /* ######################################### box-content ############################################ */
@@ -273,85 +336,95 @@ header {
     color: #d3d3d3;
     font-size: 25px;
 }
-.states{
+
+.states {
     display: flex;
-    justify-content:space-around;
-    text-align:center;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .box {
     margin-block: 20px 10px;
     font-weight: lighter;
 }
-.box h4{
-    font-size:24px;
+
+.box h4 {
+    font-size: 24px;
 }
+
 .box p {
-    font-size:18px;
+    font-size: 18px;
 }
 
 /* ############################################### BREACH DATA ################################ */
-.breach_data{
-    display:flex;
-    justify-content:space-evenly;
+.breach_data {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.largest_breach{
-    text-align:center;
-    width:465px;
+.largest_breach {
+    text-align: center;
+    width: 465px;
 }
 
-.largest_breach h4{
-    margin-block:10px;
-}
-.recent_breach h4{
-    margin-block:10px;
-}
-.recent_breach{
-    text-align:center;
-    width:465px;
+.largest_breach h4 {
+    margin-block: 10px;
 }
 
-.largest_breach_details{
-    width:465px;
-}
-.recent_breach_details{
-    width:465px;
+.recent_breach h4 {
+    margin-block: 10px;
 }
 
-.company{
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
+.recent_breach {
+    text-align: center;
+    width: 465px;
+}
+
+.largest_breach_details {
+    width: 465px;
+}
+
+.recent_breach_details {
+    width: 465px;
+}
+
+.company {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
-.company_logo{
-    height:35px;
+
+.company_logo {
+    height: 35px;
     flex-grow: 1;
-    flex-basis:100px;
+    flex-basis: 100px;
 
 }
-.company_logo img{
-    max-width:86px;
-    height:28px;
-    flex:1;
+
+.company_logo img {
+    max-width: 86px;
+    height: 28px;
+    flex: 1;
 }
 
-.company_count{
+.company_count {
     text-align: left;
-    flex-basis:100px;   
+    flex-basis: 100px;
     flex-grow: 1;
-    font-size:18.2px;
+    font-size: 18.2px;
 }
-.company_name{
+
+.company_name {
     flex-grow: 1;
     text-align: left;
     flex-basis: 264px;
 }
-.company_name a{
+
+.company_name a {
     text-decoration: none;
-    color:#d3d3d3;
-    font-size:18.2px;
+    color: #d3d3d3;
+    font-size: 18.2px;
 }
 
 /* ############################################# footer ######################################### */

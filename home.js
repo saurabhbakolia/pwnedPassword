@@ -4,8 +4,11 @@
         const company_name = document.getElementsByClassName("company_name");
         const recent_breach_details = document.getElementsByClassName("recent_breach_details");
         const largest_breach_details = document.getElementsByClassName("largest_breach_details");
+        const company_link = document.getElementById("company_link");
+        const closeIcon = document.getElementById("closeIcon");
+        const modal = document.getElementsByClassName('modal');
 
-        
+
 
 
         const url = "https://haveibeenpwned.com/api/v3/breaches/";
@@ -28,39 +31,38 @@
                 <div class="company_count"><p>${array1[i]['PwnCount']}</p></div>
                 <div class="company_name"><a href="#">${array1[i]['Name']}</a></div>
             </div>`;
+
+
             }
 
             largest_breach_details[0].innerHTML = largest;
 
             // SORT THE DATA IN DATE ORDER
-            
-        
+
+
             // console.log(data);
-            data = _.sortBy(data, function(o) { return new moment(o.AddedDate); }).reverse();
+            data = _.sortBy(data, function (o) {
+                return new moment(o.AddedDate);
+            }).reverse();
             console.log(data);
 
-            
+
             recent = ``;
             for (let i = 0; i < 10; i++) {
                 console.log(data[i]['Name']);
                 recent += `<div class="company">
                 <div class="company_logo"><img src="${data[i]['LogoPath']}" alt=""></div>
                 <div class="company_count"><p>${data[i]['PwnCount']}</p></div>
-                <div class="company_name"><a href="#">${data[i]['Name']}</a></div>
-            </div>`;
+                <div class="company_name"><a href="#" id="company_link">${data[i]['Name']}</a></div>
+            </div>`
             }
 
-            recent_breach_details[0].innerHTML = recent; 
+            recent_breach_details[0].innerHTML = recent;
 
 
-            // if (!found) {
-            //     show[0].style.display = "none";
-            //     danger[0].style.display = "none";
-            //     safe[0].style.display = "revert";
-            //     no_real[0].style.display = "none";
-            //     console.log("Password Not Found\n");
-            // }
-        })
+
+
+        });
 
         function dynamicSort(property) {
             var sortOrder = 1;
@@ -77,7 +79,7 @@
             }
         };
 
-       /*  function sorByDate(arr){
+        /*  function sorByDate(arr){
             for (let index = 0; index < arr.length; index++) {
                 const element = arr[index]['AddedDate'];
                 function sorter(element) {
@@ -88,4 +90,3 @@
             console.log(arr.reverse(arr[index]['AddedDate']));
         }
  */
-        
