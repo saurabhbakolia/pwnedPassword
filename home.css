@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, Helvetica, Arial, sans-serif
+}
+
+header {
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.container {
+    margin-inline: 280px;
+    padding-block: 20px;
+    width: 960px;
+}
+
+.navbar {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo button {
+    padding-inline: 8px;
+    padding-block: 3px;
+    height: 35px;
+    width: 42px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+}
+
+.items {
+    display: flex
+        /* align-items: center; */
+}
+
+.nav_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_items li {
+    list-style: none;
+    padding: 15px 10px 15px 10px;
+}
+
+.nav_items li a {
+    color: #ccc;
+    height: 50px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav_icon {
+    display: flex;
+    color: #d3d3d3;
+}
+
+.nav_icon i {
+    padding-inline: 2px;
+    font-size: 12px;
+    padding-block-start: 20px;
+}
+
+
+/* ######################################### article_1 ################################# */
+.article_1 {
+    color: #fff;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.777) 0%, rgba(45, 113, 145, 1) 27%, rgba(58, 148, 179, 1) 100%);
+    text-align: center;
+}
+
+.article_1 h1 {
+    font-size: 72px;
+    font-weight: 500;
+    margin-block-end: 10px;
+    padding:8px 20px 8px 20px;
+    border:4px solid #d3d3d3;
+    border-radius:20px;
+    display:inline-block;
+    background-color: #d3d3d342;
+}
+
+.article_1 p {
+    line-height: 24px;
+    font-size:20px;
+}
+
+.main {
+    height: 274px;
+    padding-block: 50px;
+}
+
+/* ########################################### form ################################# */
+
+.form {
+    background-color: #358CA8;
+    text-align: left;
+}
+
+.form input {
+    height: 60px;
+    width: 800px;
+    padding-block: 6px;
+    border-radius: 10px;
+    padding-inline: 12px;
+    font-size: 20px;
+    outline:none;
+    border:none;
+}
+
+.form button {
+    height: 60px;
+    width: 128px;
+    padding-block: 10px;
+    border-radius: 10px;
+    background-color: #3284A1;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* #####################################  CONTAINER ADS ##########################*/
+.ads {
+    background-color: #2C778D;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    /* display:none; */
+}
+
+.box_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.box_text h3 {
+    margin-inline: 10px;
+    font-weight: 300;
+}
+
+.box_text button {
+    color: #fff;
+    background-color: #1A8CFF;
+    padding-block: 6px;
+    padding-inline: 8px;
+    border-radius: 5px;
+    border:none;
+}
+
+.box_link {
+    text-align: center;
+
+}
+
+.box_link a {
+    color: #fff;
+}
+
+.ads_box{
+    width: 290px;
+    text-align:left;
+}
+
+/* ######################################### NO REAL ########################## */
+.no_real{
+    display: none;
+    background-color:#DFB300;
+    color: #fff;
+    text-align: center;
+    font-size:24px;
+}
+
+/* ###################################################### SAFE STYLE  ############################# */
+.safe {
+    display: none;
+    color: #fff;
+    padding-block: 20px;
+}
+
+.safe {
+    background: rgb(7,45,7);
+    background: linear-gradient(90deg, rgba(7,45,7,0.9699230033810399) 2%, rgba(42,118,46,1) 43%, rgba(42,118,46,1) 100%);
+    width: 100%;
+    text-align: center;
+}
+.safe h2{
+    font-size:28px;
+}
+
+.safe h4{
+    margin-block: 10px;
+    font-size:22px;
+    margin-inline-start:10px;
+}
+
+.safe_container{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.safe_container button{
+    color: #fff;
+    background-color: #1A8CFF;
+    padding-block: 6px;
+    padding-inline: 8px;
+    border-radius: 5px;
+    height:32px;
+    outline: none;
+    border:none;
+}
+
+/* ######################################### DANGER STYLE ##################################### */
+
+.danger {
+    display: none;
+    color: #fff;
+    padding-block: 20px;
+}
+
+.danger {
+    background: rgb(57, 1, 1);
+    background: linear-gradient(90deg, rgba(57, 1, 1, 0.9699230033810399) 4%, rgba(88, 9, 5, 1) 28%, rgba(172, 22, 3, 0.9475140397956058) 100%);
+    width: 100%;
+    text-align: center;
+}
+.danger h2{
+    font-size:28px;
+}
+
+.danger h4{
+    margin-block: 10px;
+    font-size:22px;
+    margin-inline-start:10px;
+}
+
+.danger_container{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.danger_container button{
+    color: #fff;
+    background-color: #1A8CFF;
+    padding-block: 6px;
+    padding-inline: 8px;
+    border-radius: 5px;
+    height:32px;
+    outline: none;
+    border:none;
+}
+
+/* ######################################### box-content ############################################ */
+.box_content {
+    background-color: #000;
+    color: #d3d3d3;
+    font-size: 25px;
+}
+.states{
+    display: flex;
+    justify-content:space-around;
+    text-align:center;
+}
+
+.box {
+    margin-block: 20px 10px;
+    font-weight: lighter;
+}
+.box h4{
+    font-size:24px;
+}
+.box p {
+    font-size:18px;
+}
+
+/* ############################################### BREACH DATA ################################ */
+.breach_data{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.largest_breach{
+    text-align:center;
+    width:465px;
+}
+
+.largest_breach h4{
+    margin-block:10px;
+}
+.recent_breach h4{
+    margin-block:10px;
+}
+.recent_breach{
+    text-align:center;
+    width:465px;
+}
+
+.largest_breach_details{
+    width:465px;
+}
+.recent_breach_details{
+    width:465px;
+}
+
+.company{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+
+}
+.company_logo{
+    height:35px;
+    flex-grow: 1;
+    flex-basis:100px;
+
+}
+.company_logo img{
+    max-width:86px;
+    height:28px;
+    flex:1;
+}
+
+.company_count{
+    text-align: left;
+    flex-basis:100px;   
+    flex-grow: 1;
+    font-size:18.2px;
+}
+.company_name{
+    flex-grow: 1;
+    text-align: left;
+    flex-basis: 264px;
+}
+.company_name a{
+    text-decoration: none;
+    color:#d3d3d3;
+    font-size:18.2px;
+}
+
+/* ############################################# footer ######################################### */
+footer {
+    background-color: #000;
+    padding-block: 10px 10px;
+
+}
+
+.footer_link {
+    text-align: center;
+    text-decoration: none;
+    color: #323232;
+    font-size: 24px;
+}
+
+.social_icon {
+    text-align: center;
+    margin-block: 10px 0px;
+}
+
+.social_icon i {
+    color: #323232;
+    padding-inline: 10px;
+}
