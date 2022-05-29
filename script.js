@@ -1,9 +1,20 @@
 const submit = document.getElementById("submit");
 let input = document.getElementById("password");
 const output = document.getElementById("output");
+const danger = document.getElementsByClassName("danger");
+const safe = document.getElementsByClassName("safe");
+const show = document.getElementsByClassName("show");
+const no_real = document.getElementsByClassName("no_real");
+
 
 submit.onclick = (e) => {
     e.preventDefault();
+    if(input.value == ""){
+        danger[0].style.display =  "none";
+        safe[0].style.display = "none";
+        show[0].style.display =  "none";
+        no_real[0].style.display = "revert";
+    }else{
 
     logSha1(input.value);
 
@@ -47,19 +58,26 @@ submit.onclick = (e) => {
 
                 if(h[0] == prefix.toUpperCase()) {
                     console.log("Password Found\n" + h[1] + " times");
-                    output.innerHTML = "This password has been seen " +  h[1]  + " times.";
+                    danger[0].style.display =  "revert";
+                    show[0].style.display =  "none";
+                    no_real[0].style.display = "none";
+
+                    output.innerHTML = "This password has been seen " +  h[1]  + " times before." ;
                     found = true;
                     break;
                 }
             }
 
             if(!found){
+                show[0].style.display =  "none";
+                danger[0].style.display =  "none";
+                safe[0].style.display = "revert";
+                no_real[0].style.display = "none";
                 console.log("Password Not Found\n");
-                output.innerHTML = "Your Password NOT Found";
-
             }
         })
 
     };
+}
 
 };
