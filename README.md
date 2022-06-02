@@ -2,7 +2,7 @@
 
 Here is the website live link: [haveibeenpawned?](https://preeminent-moxie-fd9569.netlify.app/)
 
-This is a clone of ihavebeenpawned website. 
+This is a clone of haveibeenpawned website. 
 You can check, if you have been pawned?
 Before choosing new password now-on, Check your Password first on this link and then, choose wisely
 ![image](https://user-images.githubusercontent.com/78996216/171419114-0c422f8f-55fd-4414-847e-608400d45714.png)
